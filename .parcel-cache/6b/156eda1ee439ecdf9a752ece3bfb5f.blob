@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First App</title>
+</head>
+<body>
+<div id="root">Hello, World</div>
+<script src="/react-course.loc.2aac96d9.js"></script>
+</body>
+</html>
