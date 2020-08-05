@@ -1,16 +1,20 @@
 import React from 'react';
 
-const classes = {
-    root: 'w3-container',
-    dropdownCard: 'w3-dropdown-content w3-card-4',
-    authorCard: 'w3-col'
-}
-
 const styles = {
-    dropdownCard: {
-        width: '250px',
+    avatarUrl: {
+        width: '200px',
     },
 }
+
+const classes = {
+    authorCol: 'w3-padding w3-col',
+    authorAbout: 'w3-padding w3-xxlarge',
+    imgBlock: 'w3-right w3-padding',
+    name: 'w3-padding w3-xlarge',
+    eMail:'w3-padding w3-text-blue w3-padding w3-xlarge',
+    about: 'w3-padding'
+}
+
 
 class AuthorCard extends React.Component {
     render(){
@@ -25,18 +29,21 @@ class AuthorCard extends React.Component {
 
 
         return (
-            <div class={classes.dropdownCard} style={styles.dropdownCard}>
-                <div class={classes.authorCard}>
-                    <div>
-                        <img src={avatarUrl} />
+            <div class={classes.authorCol}>
+                <div>
+                    <div class={classes.authorAbout}>
+                        About author
                     </div>
-                    <div>
+                    <div class={classes.imgBlock}>
+                        <img style={styles.avatarUrl} src={avatarUrl} />
+                    </div>
+                    <div class={classes.name}>
                         <span>{name}</span>
                     </div>
-                    <div>
-                        <span>{eMail}</span>
+                    <div class={classes.eMail}>
+                        <a href={`mailto:${eMail}`}> E-mail </a>
                     </div>
-                    <div>
+                    <div class={classes.about}>
                         <span>{about}</span>
                     </div>
                 </div>
