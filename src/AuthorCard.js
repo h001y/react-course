@@ -35,7 +35,7 @@ class AuthorCard extends React.Component {
                         About author
                     </div>
                     <div class={classes.imgBlock}>
-                        <img style={styles.avatarUrl} src={avatarUrl} />
+                        <img alt={name} style={styles.avatarUrl} src={avatarUrl} />
                     </div>
                     <div class={classes.name}>
                         <span>{name}</span>

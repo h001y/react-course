@@ -10,7 +10,6 @@
       <change beforePath="$PROJECT_DIR$/.parcel-cache/cf/199418511341621819293907574a3a.v8" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/cf/199418511341621819293907574a3a.v8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.parcel-cache/d5/91018deb4e7fcb9d31cbada5e128f8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/d5/91018deb4e7fcb9d31cbada5e128f8.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AuthorCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthorCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookCard.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +89,7 @@
       <workItem from="1596472060041" duration="2290000" />
       <workItem from="1596552674707" duration="1434000" />
       <workItem from="1596554481160" duration="6246000" />
-      <workItem from="1596614679150" duration="4775000" />
+      <workItem from="1596614679150" duration="5240000" />
     </task>
     <task id="LOCAL-00001" summary="1 version task 1.1">
       <created>1596618720562</created>
@@ -99,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596618720562</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2 version task 1.1">
+      <created>1596619486184</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596619486184</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,17 +113,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1 version task 1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1 version task 1.1" />
+    <MESSAGE value="2 version task 1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 version task 1.1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="728" y="359" width="456" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596556690578">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="728" y="359" width="456" height="396" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1596556690578" />
-    <state x="0" y="39" width="769" height="1038" key="CommitChangelistDialog2" timestamp="1596618720383">
+    <state x="0" y="39" width="769" height="1038" key="CommitChangelistDialog2" timestamp="1596619486095">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="0" y="39" width="769" height="1038" key="CommitChangelistDialog2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1596618720383" />
+    <state x="0" y="39" width="769" height="1038" key="CommitChangelistDialog2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1596619486095" />
     <state x="821" y="463" key="Github.ShareDialog" timestamp="1596557735053">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -126,10 +133,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="464" y="195" key="SettingsEditor/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1596556358240" />
-    <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2" timestamp="1596618728869">
+    <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2" timestamp="1596619490924">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1596618728869" />
+    <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1596619490924" />
     <state x="623" y="268" width="672" height="678" key="search.everywhere.popup" timestamp="1596552898615">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
