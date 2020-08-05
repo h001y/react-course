@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="313d4e04-41f0-4a01-9bcf-54c6f9d1537a" name="Default Changelist" comment="" />
+    <list default="true" id="313d4e04-41f0-4a01-9bcf-54c6f9d1537a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/w3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AuthorCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BookCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/49/65a15087e4ed753c8c1aeaa687d62a.v8" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/49/65a15087e4ed753c8c1aeaa687d62a.v8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/88/7b8d4d333b820ac158ae84e8caa146.v8" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/88/7b8d4d333b820ac158ae84e8caa146.v8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/98/579eea10b9cab7c682389a00c06629.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/98/579eea10b9cab7c682389a00c06629.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/c7/cc32ad4ca8a254f56014d3159df567.v8" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/c7/cc32ad4ca8a254f56014d3159df567.v8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/cf/199418511341621819293907574a3a.v8" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/cf/199418511341621819293907574a3a.v8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/d5/91018deb4e7fcb9d31cbada5e128f8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/d5/91018deb4e7fcb9d31cbada5e128f8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,10 +28,42 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="homework_1.1" />
+                    <option name="lastUsedInstant" value="1596557964" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1596557963" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="ProjectId" id="1fazpY11sS6VdwDJs0oHptjtl8m" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -30,6 +80,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,7 +97,8 @@
       <workItem from="1596471311536" duration="738000" />
       <workItem from="1596472060041" duration="2290000" />
       <workItem from="1596552674707" duration="1434000" />
-      <workItem from="1596554481160" duration="2176000" />
+      <workItem from="1596554481160" duration="6246000" />
+      <workItem from="1596614679150" duration="3844000" />
     </task>
     <servers />
   </component>
@@ -50,6 +106,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="728" y="359" width="456" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596556690578">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="728" y="359" width="456" height="396" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1596556690578" />
+    <state x="821" y="463" key="Github.ShareDialog" timestamp="1596557735053">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="821" y="463" key="Github.ShareDialog/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1596557735053" />
     <state x="464" y="195" key="SettingsEditor" timestamp="1596556358240">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
