@@ -5,35 +5,45 @@ import AuthorCard from './AuthorCard';
 class AuthorsList extends React.Component {
     constructor(props){
         super(props);
-
-        this.state = { showAllAuthors: false };
+        this.state = {
+            showAllAuthors: false
+        };
     }
 
     toggleShowAuthors() {
-        this.setState({showAllAuthors: !this.state.showAllAuthors });
+        this.setState({
+            showAllAuthors: !this.state.showAllAuthors
+        });
     }
 
     render() {
+        if (!this.props.authors)
+            return <div>Empty authors</div>;
+
+        const { authors } = this.props;
         const { showAllAuthors } = this.state;
+
+        const showAuthor =
+            showAllAuthors ? authors : authors.slice(0,3);
+
+
         return (
-            <div>
-                <button onClick= {() => this.toggleShowAuthors()}>Show All Authors</button>
-            </div>
-            <div>
-                {this.props.authors.map((author, idx) => (
-                <div key={idx} style={styles.item}>
-                    <AuthorCard author={author} />
+                <div>
+                    {
+                        showAuthor.map((author) => (
+                            <div key={author.id}>
+                                <AuthorCard author={author} />
+                            </div>
+                        ))
+                    }
+                    <button onClick={() => this.toggleShowAuthors()}>Show all authors</button>
                 </div>
-                    ))}
-            </div>
         );
     }
 }
 
-export default AuthorsList;
-
-const styles = {
-    item: {
-        marginBottom:'25px',
-    }
+AuthorsLost.propTypes = {
+    authors: PropTypes.array,
 };
+
+export default AuthorsList;
