@@ -37,9 +37,9 @@ class BookCard extends React.Component {
 
 
         return (
-            <div class={classes.mainContainer}>
-                <div class={classes.bookCard}>
-                    <div class={classes.bookInfo}>
+            <div className={classes.mainContainer}>
+                <div className={classes.bookCard}>
+                    <div className={classes.bookInfo}>
                         <div className={classes.name}>{name}</div>
                         <div className={classes.shortDescription}>{shortDescription}</div>
                         <div className={classes.pagesNum}>Pages: {pagesNum}</div>
@@ -50,8 +50,8 @@ class BookCard extends React.Component {
                         <div>Taken from Sell: {takenBill}</div>
                         <div>Waiting from Sell: {WaitingBill}</div>
                     </div>
-                    <div class={classes.bookImg}>
-                        <div class={classes.urlPic}><img alt={shortDescription} src={urlPic} /></div>
+                    <div className={classes.bookImg}>
+                        <div className={classes.urlPic}><img alt={shortDescription} src={urlPic} /></div>
                     </div>
                     <div class={classes.authorInf}>
                         <AuthorCard author={author} />

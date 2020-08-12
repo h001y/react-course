@@ -29,21 +29,21 @@ class AuthorCard extends React.Component {
 
 
         return (
-            <div class={classes.authorCol}>
+            <div className={classes.authorCol}>
                 <div>
-                    <div class={classes.authorAbout}>
+                    <div className={classes.authorAbout}>
                         About author
                     </div>
-                    <div class={classes.imgBlock}>
+                    <div className={classes.imgBlock}>
                         <img alt={name} style={styles.avatarUrl} src={avatarUrl} />
                     </div>
-                    <div class={classes.name}>
+                    <div className={classes.name}>
                         <span>{name}</span>
                     </div>
-                    <div class={classes.eMail}>
+                    <div className={classes.eMail}>
                         <a href={`mailto:${eMail}`}> E-mail </a>
                     </div>
-                    <div class={classes.about}>
+                    <div className={classes.about}>
                         <span>{about}</span>
                     </div>
                 </div>
