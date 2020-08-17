@@ -3,16 +3,22 @@ import BookCard from './BookCard';
 
 const styles = {
     header:{
-        backgroundColor:'#d6e4f6',
+        backgroundColor:'#d3ddf3',
         color:'#2b1b1b',
+        fontSize: '26px',
+        fontFamily:'OpenSans',
         minHeight:'50px',
         marginBottom:'45px',
     },
     footer:{
-        backgroundColor:'#cdcaca',
-        color:'#2e2e2e',
+        backgroundColor:'#eec2c2',
+        color:'#705151',
         minHeight:'140px',
         marginTop:'60px',
+        paddingLeft: '20px',
+        paddingTop: '20px',
+        borderBottomLeftRadius: '30px',
+        borderBottomRightRadius: '30px'
     },
     logo:{
         maxWidth:'110px',
@@ -34,9 +40,9 @@ class App extends React.Component {
                   </main>
                 <footer style={styles.footer}>
                    <div>
-                       <span> Made with love from Russia {new Date().getFullYear()} @copyright</span>
-                       <span> All Right reserved</span>
-                       <span> Protected by <a href="">WTFPL</a> License</span>
+                       <br /><span> Made with love from Russia {new Date().getFullYear()} @copyright</span>
+                       <br /><span> All Right reserved</span>
+                       <br /><span> Protected by <a href="">WTFPL</a> License</span>
                    </div>
                 </footer>
             </>
