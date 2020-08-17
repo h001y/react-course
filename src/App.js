@@ -1,5 +1,25 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import BookCard from './BookCard';
+
+const styles = {
+    header:{
+        backgroundColor:'#d6e4f6',
+        color:'#2b1b1b',
+        minHeight:'50px',
+        marginBottom:'45px',
+    },
+    footer:{
+        backgroundColor:'#cdcaca',
+        color:'#2e2e2e',
+        minHeight:'140px',
+        marginTop:'60px',
+    },
+    logo:{
+        maxWidth:'110px',
+    }
+
+}
 
 class App extends React.Component {
     render() {
@@ -24,23 +44,8 @@ class App extends React.Component {
     }
 }
 
+App.propTypes = {
+    book: PropTypes.object
+};
+
 export default App;
-
-const styles = {
-    header:{
-        backgroundColor:'#d6e4f6',
-        color:'#2b1b1b',
-        minHeight:'50px',
-        marginBottom:'45px',
-    },
-    footer:{
-        backgroundColor:'#cdcaca',
-        color:'#2e2e2e',
-        minHeight:'140px',
-        marginTop:'60px',
-    },
-    logo:{
-        maxWidth:'110px',
-    }
-
-}

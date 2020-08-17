@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 const styles = {
     avatarUrl: {
@@ -15,18 +17,19 @@ const classes = {
     about: 'w3-padding'
 }
 
-
 class AuthorCard extends React.Component {
     render(){
+        if (!this.props.author)
+            return <div>Empty author</div>;
+
         const{
             author: {
-                name,
+                authorName,
                 eMail,
                 avatarUrl,
                 about
             }
         } = this.props;
-
 
         return (
             <div className={classes.authorCol}>
@@ -35,10 +38,10 @@ class AuthorCard extends React.Component {
                         About author
                     </div>
                     <div className={classes.imgBlock}>
-                        <img alt={name} style={styles.avatarUrl} src={avatarUrl} />
+                        <img alt={authorName} style={styles.avatarUrl} src={avatarUrl} />
                     </div>
                     <div className={classes.name}>
-                        <span>{name}</span>
+                        <span>{authorName}</span>
                     </div>
                     <div className={classes.eMail}>
                         <a href={`mailto:${eMail}`}> E-mail </a>
@@ -51,5 +54,16 @@ class AuthorCard extends React.Component {
         );
     }
 }
+
+
+AuthorCard.propTypes = {
+    author: PropTypes.exact({
+        authorName: PropTypes.string,
+        eMail: PropTypes.string,
+        avatarUrl: PropTypes.string,
+        about: PropTypes.string
+    })
+};
+
 
 export default AuthorCard;

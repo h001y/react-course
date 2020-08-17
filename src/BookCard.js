@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import AuthorCard from './AuthorCard';
+import AuthorList from "./AuthorList";
 
 const classes = {
     mainContainer: 'w3-container',
@@ -27,7 +28,7 @@ class BookCard extends React.Component {
                 language,
                 progress,
                 urlPic,
-                author,
+                authors,
                 minPrice,
                 expectPrice,
                 takenBill,
@@ -54,12 +55,28 @@ class BookCard extends React.Component {
                         <div className={classes.urlPic}><img alt={shortDescription} src={urlPic} /></div>
                     </div>
                     <div class={classes.authorInf}>
-                        <AuthorCard author={author} />
+                        <AuthorList authors={authors} />
                     </div>
                 </div>
             </div>
         );
     }
 }
+
+BookCard.propTypes = {
+    book: PropTypes.exact({
+        name: PropTypes.string,
+        shortDescription: PropTypes.string,
+        pagesNum: PropTypes.string,
+        language: PropTypes.string,
+        progress: PropTypes.string,
+        urlPic: PropTypes.string,
+        authors: PropTypes.array,
+        minPrice: PropTypes.string,
+        expectPrice: PropTypes.string,
+        takenBill: PropTypes.string,
+        WaitingBill: PropTypes.string
+    })
+};
 
 export default BookCard;
