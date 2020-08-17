@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import BookCard from './BookCard';
 
 const styles = {
@@ -21,6 +20,7 @@ const styles = {
 
 }
 
+
 class App extends React.Component {
     render() {
         const { book } = this.props;
@@ -34,7 +34,7 @@ class App extends React.Component {
                   </main>
                 <footer style={styles.footer}>
                    <div>
-                       <span> Made with love from Russia 2020 @copyright</span>
+                       <span> Made with love from Russia {new Date().getFullYear()} @copyright</span>
                        <span> All Right reserved</span>
                        <span> Protected by <a href="">WTFPL</a> License</span>
                    </div>
@@ -43,9 +43,5 @@ class App extends React.Component {
         );
     }
 }
-
-App.propTypes = {
-    book: PropTypes.object
-};
 
 export default App;

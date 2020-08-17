@@ -1,6 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-
 import AuthorList from "./AuthorList";
 
 const classes = {
@@ -20,6 +18,9 @@ const classes = {
 
 class BookCard extends React.Component {
     render(){
+        if (!this.props.book)
+            return <div>Empty book</div>;
+
         const{
             book: {
                 name,
@@ -35,7 +36,6 @@ class BookCard extends React.Component {
                 WaitingBill
             }
         } = this.props;
-
 
         return (
             <div className={classes.mainContainer}>
@@ -54,7 +54,7 @@ class BookCard extends React.Component {
                     <div className={classes.bookImg}>
                         <div className={classes.urlPic}><img alt={shortDescription} src={urlPic} /></div>
                     </div>
-                    <div class={classes.authorInf}>
+                    <div className={classes.authorInf}>
                         <AuthorList authors={authors} />
                     </div>
                 </div>
@@ -62,21 +62,5 @@ class BookCard extends React.Component {
         );
     }
 }
-
-BookCard.propTypes = {
-    book: PropTypes.exact({
-        name: PropTypes.string,
-        shortDescription: PropTypes.string,
-        pagesNum: PropTypes.string,
-        language: PropTypes.string,
-        progress: PropTypes.string,
-        urlPic: PropTypes.string,
-        authors: PropTypes.array,
-        minPrice: PropTypes.string,
-        expectPrice: PropTypes.string,
-        takenBill: PropTypes.string,
-        WaitingBill: PropTypes.string
-    })
-};
 
 export default BookCard;

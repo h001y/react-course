@@ -1,6 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-
 
 const styles = {
     avatarUrl: {
@@ -23,12 +21,12 @@ class AuthorCard extends React.Component {
             return <div>Empty author</div>;
 
         const{
-            author: {
-                authorName,
-                eMail,
-                avatarUrl,
-                about
-            }
+                author: {
+                    authorName,
+                    eMail,
+                    avatarUrl,
+                    about
+                }
         } = this.props;
 
         return (
@@ -54,16 +52,5 @@ class AuthorCard extends React.Component {
         );
     }
 }
-
-
-AuthorCard.propTypes = {
-    author: PropTypes.exact({
-        authorName: PropTypes.string,
-        eMail: PropTypes.string,
-        avatarUrl: PropTypes.string,
-        about: PropTypes.string
-    })
-};
-
 
 export default AuthorCard;
