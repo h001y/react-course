@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import AuthorCard from './AuthorCard';
 
-class AuthorsList extends React.Component {
+class AuthorList extends React.Component {
     constructor(props){
         super(props);
         this.state = {
@@ -23,15 +24,14 @@ class AuthorsList extends React.Component {
         const { authors } = this.props;
         const { showAllAuthors } = this.state;
 
-        const showAuthor =
-            showAllAuthors ? authors : authors.slice(0,3);
-
+        const showedAuthors =
+            showAllAuthors ? authors : authors.slice(0, 3);
 
         return (
                 <div>
                     {
-                        showAuthor.map((author) => (
-                            <div key={author.id}>
+                        showedAuthors.map((author) => (
+                            <div key={author.eMail}>
                                 <AuthorCard author={author} />
                             </div>
                         ))
@@ -42,8 +42,8 @@ class AuthorsList extends React.Component {
     }
 }
 
-AuthorsLost.propTypes = {
+AuthorList.propTypes = {
     authors: PropTypes.array,
 };
 
-export default AuthorsList;
+export default AuthorList;
