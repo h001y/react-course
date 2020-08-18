@@ -31,12 +31,21 @@ const book = {
             'eMail': 'Roger@Peng.com',
             'avatarUrl': 'https://d39qdlcrvnra4b.cloudfront.net/avatars/252949/original/headshot_square.png?1425585380',
             'about': 'Roger D. Peng is a Professor of Biostatistics at the Johns Hopkins Bloomberg School of Public Health where his research focuses on the development of statistical methods for addressing environmental health problems. He is the author of the popular book R Programming for Data Science and nine other books on data science and statistics. He is also the co-creator of the Johns Hopkins Data Science Specialization, the Simply Statistics blog where he writes about statistics for the public, the Not So Standard Deviations podcast with Hilary Parker, and The Effort Report podcast with Elizabeth Matsui. Roger is a Fellow of the American Statistical Association and is the recipient of the Mortimer Spiegelman Award from the American Public Health Association, which honors a statistician who has made outstanding contributions to public health. He can be found on Twitter and GitHub at @rdpeng.'
+        },
+        {
+            'authorId': '4',
+            'authorName': 'Gregor Hohpe ',
+            'eMail': 'Gregor@Hohpe.com',
+            'avatarUrl': 'https://d39qdlcrvnra4b.cloudfront.net/avatars/341672/original/gregor_hohpe_hires.jpg?1579927914',
+            'about': 'Gregor Hohpe advises CTOs and senior IT executives on IT strategy, cloud architecture, and organizational transformation. He served as advisor to the Singapore government, chief architect at Allianz SE, and technical director at Google Cloud’s CTO Office.'
         }
     ],
     'minPrice':'$15.99' ,
     'expectPrice':'$15.99',
     'takenBill':'$200',
-    'WaitingBill':'$500'
+    'WaitingBill':'$500',
+    'subscribers': '489',
+    'hotPngImg': 'http://cdn.onlinewebfonts.com/svg/img_343770.png'
 }
 
 ReactDOM.render(
