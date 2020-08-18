@@ -2,16 +2,22 @@ import React from 'react';
 
 const styles = {
     avatarUrl: {
-        width: '200px',
+        width: '120px',
+        height: '120px'
     },
+    authorBlock: {
+        maxWidth: '220px',
+        maxHeight: '300px',
+        overflowX: 'hidden'
+    }
 }
 
 const classes = {
     authorCol: 'w3-padding w3-col',
-    authorAbout: 'w3-padding w3-xxlarge',
+    authorAbout: 'w3-padding w3-large',
     imgBlock: 'w3-right w3-padding',
     name: 'w3-padding w3-xlarge',
-    eMail:'w3-padding w3-text-blue w3-padding w3-xlarge',
+    eMail:'w3-text-blue w3-padding w3-large',
     about: 'w3-padding'
 }
 
@@ -30,11 +36,8 @@ class AuthorCard extends React.Component {
         } = this.props;
 
         return (
-            <div className={classes.authorCol}>
+            <div style={styles.authorBlock} className={classes.authorCol}>
                 <div>
-                    <div className={classes.authorAbout}>
-                        About author
-                    </div>
                     <div className={classes.imgBlock}>
                         <img alt={authorName} style={styles.avatarUrl} src={avatarUrl} />
                     </div>
@@ -43,9 +46,6 @@ class AuthorCard extends React.Component {
                     </div>
                     <div className={classes.eMail}>
                         <a href={`mailto:${eMail}`}> E-mail </a>
-                    </div>
-                    <div className={classes.about}>
-                        <span>{about}</span>
                     </div>
                 </div>
             </div>

@@ -1,9 +1,16 @@
 import React from 'react';
 import AuthorList from "./AuthorList";
 
+const styles = {
+    hotPngImg: {
+        width: '90px',
+        height: '90px'
+    }
+}
+
 const classes = {
     mainContainer: 'w3-container',
-    bookInfo: "w3-row w3-col m4",
+    bookInfo: "w3-row w3-col m2",
     bookImg: "w3-row w3-col m4",
     bookCard: 'w3-row',
     headTitle: 'w3-row',
@@ -13,7 +20,7 @@ const classes = {
     language: 'w3-row w3-padding m2',
     progress: 'w3-row w3-padding m2',
     urlPic: 'w3-row w3-padding m6',
-    authorInf: 'w3-row w3-col m4'
+    authorInf: 'w3-row w3-col m6'
 }
 
 class BookCard extends React.Component {
@@ -33,7 +40,9 @@ class BookCard extends React.Component {
                 minPrice,
                 expectPrice,
                 takenBill,
-                WaitingBill
+                WaitingBill,
+                subscribers,
+                hotPngImg
             }
         } = this.props;
 
@@ -50,11 +59,17 @@ class BookCard extends React.Component {
                         <div>Expecting Price: {expectPrice}</div>
                         <div>Taken from Sell: {takenBill}</div>
                         <div>Waiting from Sell: {WaitingBill}</div>
+                        <div>Subscribers: {subscribers}</div>
+                            {
+                                subscribers > 300 &&
+                            <img style={styles.hotPngImg} src={hotPngImg} />
+                        }
                     </div>
                     <div className={classes.bookImg}>
                         <div className={classes.urlPic}><img alt={shortDescription} src={urlPic} /></div>
                     </div>
                     <div className={classes.authorInf}>
+
                         <AuthorList authors={authors} />
                     </div>
                 </div>
