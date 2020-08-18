@@ -19,22 +19,14 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:homework_1.2" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="313d4e04-41f0-4a01-9bcf-54c6f9d1537a" name="Default Changelist" comment="">
+    <list default="true" id="313d4e04-41f0-4a01-9bcf-54c6f9d1537a" name="Default Changelist" comment="working no styles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuthorCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthorCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuthorList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthorList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/authors.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/authors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/books.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/books.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +43,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -94,7 +87,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -119,6 +112,7 @@
       <workItem from="1596730901754" duration="357000" />
       <workItem from="1596812746019" duration="959000" />
       <workItem from="1597239959104" duration="6941000" />
+      <workItem from="1597764523282" duration="69000" />
     </task>
     <task id="LOCAL-00001" summary="1 version task 1.1">
       <created>1596618720562</created>
@@ -183,6 +177,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1 version task 1.1" />
@@ -212,18 +207,22 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="800" y="181" width="312" height="752" key="RollbackChangesDialog/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597243987276" />
-    <state x="464" y="195" key="SettingsEditor" timestamp="1596556358240">
+    <state x="464" y="195" key="SettingsEditor" timestamp="1597764591431">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="464" y="195" key="SettingsEditor/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1596556358240" />
-    <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2" timestamp="1597244929953">
+    <state x="464" y="195" key="SettingsEditor/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597764591431" />
+    <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2" timestamp="1597684345990">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597244929953" />
+    <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597684345990" />
     <state x="99" y="139" width="1722" height="842" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597244409031">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="99" y="139" width="1722" height="842" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597244409031" />
+    <state x="775" y="476" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597684350680">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="775" y="476" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597684350680" />
     <state x="623" y="258" key="run.anything.popup" timestamp="1597242679397">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
