@@ -26,13 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="313d4e04-41f0-4a01-9bcf-54c6f9d1537a" name="Default Changelist" comment="git clean temp files">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.parcel-cache/49/65a15087e4ed753c8c1aeaa687d62a.v8" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/49/65a15087e4ed753c8c1aeaa687d62a.v8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.parcel-cache/88/7b8d4d333b820ac158ae84e8caa146.v8" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/88/7b8d4d333b820ac158ae84e8caa146.v8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.parcel-cache/98/579eea10b9cab7c682389a00c06629.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/98/579eea10b9cab7c682389a00c06629.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.parcel-cache/c7/cc32ad4ca8a254f56014d3159df567.v8" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/c7/cc32ad4ca8a254f56014d3159df567.v8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.parcel-cache/cf/199418511341621819293907574a3a.v8" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/cf/199418511341621819293907574a3a.v8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.parcel-cache/d5/91018deb4e7fcb9d31cbada5e128f8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/d5/91018deb4e7fcb9d31cbada5e128f8.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +44,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -120,6 +114,7 @@
       <workItem from="1597239959104" duration="6941000" />
       <workItem from="1597764523282" duration="69000" />
       <workItem from="1597764611884" duration="6168000" />
+      <workItem from="1597828126127" duration="356000" />
     </task>
     <task id="LOCAL-00001" summary="1 version task 1.1">
       <created>1596618720562</created>
@@ -170,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597768379321</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="git clean temp files">
+      <created>1597828365115</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597828365115</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,10 +215,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="728" y="359" width="658" height="396" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597764699291" />
-    <state x="706" y="122" width="728" height="860" key="CommitChangelistDialog2" timestamp="1597768379185">
+    <state x="706" y="122" width="728" height="860" key="CommitChangelistDialog2" timestamp="1597828462807">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="706" y="122" width="728" height="860" key="CommitChangelistDialog2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597768379185" />
+    <state x="706" y="122" width="728" height="860" key="CommitChangelistDialog2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597828462807" />
     <state x="439" y="133" width="1026" height="844" key="DiffContextDialog" timestamp="1597243984873">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -241,18 +243,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="812" y="466" width="288" height="182" key="VCS.ChangelistChooser/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597764721160" />
-    <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2" timestamp="1597768381177">
+    <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2" timestamp="1597828426332">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597768381177" />
+    <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597828426332" />
     <state x="99" y="139" width="1722" height="842" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597244409031">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="99" y="139" width="1722" height="842" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597244409031" />
-    <state x="775" y="476" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597684350680">
+    <state x="775" y="476" width="362" height="178" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597828373820">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="775" y="476" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597684350680" />
+    <state x="775" y="476" width="362" height="178" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597828373820" />
     <state x="623" y="258" key="run.anything.popup" timestamp="1597242679397">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
