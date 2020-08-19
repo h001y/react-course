@@ -25,8 +25,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="313d4e04-41f0-4a01-9bcf-54c6f9d1537a" name="Default Changelist" comment="working no styles">
+    <list default="true" id="313d4e04-41f0-4a01-9bcf-54c6f9d1537a" name="Default Changelist" comment="git clean temp files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/49/65a15087e4ed753c8c1aeaa687d62a.v8" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/49/65a15087e4ed753c8c1aeaa687d62a.v8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/88/7b8d4d333b820ac158ae84e8caa146.v8" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/88/7b8d4d333b820ac158ae84e8caa146.v8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/98/579eea10b9cab7c682389a00c06629.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/98/579eea10b9cab7c682389a00c06629.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/c7/cc32ad4ca8a254f56014d3159df567.v8" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/c7/cc32ad4ca8a254f56014d3159df567.v8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/cf/199418511341621819293907574a3a.v8" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/cf/199418511341621819293907574a3a.v8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.parcel-cache/d5/91018deb4e7fcb9d31cbada5e128f8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.parcel-cache/d5/91018deb4e7fcb9d31cbada5e128f8.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +119,7 @@
       <workItem from="1596812746019" duration="959000" />
       <workItem from="1597239959104" duration="6941000" />
       <workItem from="1597764523282" duration="69000" />
+      <workItem from="1597764611884" duration="6168000" />
     </task>
     <task id="LOCAL-00001" summary="1 version task 1.1">
       <created>1596618720562</created>
@@ -149,7 +156,21 @@
       <option name="project" value="LOCAL" />
       <updated>1597244925620</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="git clean temp files">
+      <created>1597764810892</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597764810892</updated>
+    </task>
+    <task id="LOCAL-00007" summary="git clean temp files">
+      <created>1597768379321</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1597768379321</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,17 +205,18 @@
     <MESSAGE value="2 version task 1.1" />
     <MESSAGE value="+ footer + header" />
     <MESSAGE value="+ AuthorList.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ AuthorList.js" />
+    <MESSAGE value="git clean temp files" />
+    <option name="LAST_COMMIT_MESSAGE" value="git clean temp files" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="728" y="359" width="456" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596556690578">
+    <state x="728" y="359" width="658" height="396" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597764699291">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="728" y="359" width="456" height="396" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1596556690578" />
-    <state x="0" y="39" width="769" height="1038" key="CommitChangelistDialog2" timestamp="1597244925507">
+    <state x="728" y="359" width="658" height="396" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597764699291" />
+    <state x="706" y="122" width="728" height="860" key="CommitChangelistDialog2" timestamp="1597768379185">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="0" y="39" width="769" height="1038" key="CommitChangelistDialog2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597244925507" />
+    <state x="706" y="122" width="728" height="860" key="CommitChangelistDialog2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597768379185" />
     <state x="439" y="133" width="1026" height="844" key="DiffContextDialog" timestamp="1597243984873">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -203,6 +225,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="821" y="463" key="Github.ShareDialog/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1596557735053" />
+    <state x="543" y="295" width="826" height="525" key="IDE.errors.dialog" timestamp="1597769479360">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="543" y="295" width="826" height="525" key="IDE.errors.dialog/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597769479360" />
     <state x="800" y="181" width="312" height="752" key="RollbackChangesDialog" timestamp="1597243987276">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -211,10 +237,14 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="464" y="195" key="SettingsEditor/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597764591431" />
-    <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2" timestamp="1597684345990">
+    <state x="812" y="466" width="288" height="182" key="VCS.ChangelistChooser" timestamp="1597764721160">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597684345990" />
+    <state x="812" y="466" width="288" height="182" key="VCS.ChangelistChooser/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597764721160" />
+    <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2" timestamp="1597768381177">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597768381177" />
     <state x="99" y="139" width="1722" height="842" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597244409031">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
