@@ -1,5 +1,6 @@
 import React from 'react';
 import BookCard from './BookCard';
+import Modal from './Modal';
 
 import './index.css'
 
@@ -24,23 +25,16 @@ const styles = {
     },
     logo:{
         maxWidth:'110px',
-    },
-    cookieImg: {
-        width: '40px',
-        height: '40px'
     }
-
 }
-
-const cookieImg = 'https://www.freeiconspng.com/uploads/dark-fresh-chocolate-cookie-pictures-12.png';
 
 class App extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { isModalOpen: false };
     }
     render() {
         const { book } = this.props;
+        const { modal } = this.props;
         return (
             <>
                 <header style={styles.header}>
@@ -48,14 +42,7 @@ class App extends React.Component {
                 </header>
                 <main>
                     <div>
-                        <button onClick={() => this.openModal()}>Open modal</button>
-                        <Modal
-                            isOpen={this.state.isModalOpen}
-                            onClose={() => this.closeModal()}>
-                            <h3>Private policy</h3>
-                            <p>We use cookie</p>
-                            <img style={styles.cookieImg} src={cookieImg}/>
-                        </Modal>
+                        <Modal modal={modal} />
                     </div>
                     <div>
                         <BookCard book={book} />
@@ -70,35 +57,6 @@ class App extends React.Component {
                 </footer>
             </>
         );
-    }
-
-    openModal() {
-        this.setState({ isModalOpen: true });
-    }
-
-    closeModal() {
-        this.setState({ isModalOpen: false });
-    }
-
-}
-
-class Modal extends React.Component {
-    render() {
-        if (this.props.isOpen === false) return null;
-        return (
-            <div>
-                <div className="modal">{this.props.children}</div>
-                <div className="bg" onClick={e => this.close(e)} />
-            </div>
-        );
-    }
-
-    close(e) {
-        e.preventDefault();
-
-        if (this.props.onClose) {
-            this.props.onClose();
-        }
     }
 }
 
