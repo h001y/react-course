@@ -56,6 +56,7 @@ class App extends React.Component {
                             <p>We use cookie</p>
                             <img style={styles.cookieImg} src={cookieImg}/>
                         </Modal>
+
                     </div>
                     <div>
                         <BookCard book={book} />
