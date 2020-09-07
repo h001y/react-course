@@ -19,10 +19,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature-clean-branch" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -83,6 +84,8 @@
       <option name="presentableId" value="Default" />
       <updated>1599514054477</updated>
       <workItem from="1599514057325" duration="723000" />
+      <workItem from="1599514833044" duration="60000" />
+      <workItem from="1599514920819" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="clean">
       <created>1599514426492</created>
@@ -91,7 +94,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599514426492</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="clean">
+      <created>1599514859193</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599514859193</updated>
+    </task>
+    <task id="LOCAL-00003" summary="clean">
+      <created>1599514880448</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599514880448</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,18 +163,19 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="812" y="466" width="288" height="182" key="VCS.ChangelistChooser/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597764721160" />
-    <state x="395" y="186" width="802" height="531" key="Vcs.Push.Dialog.v2" timestamp="1599514730274">
+    <state x="395" y="186" width="802" height="531" key="Vcs.Push.Dialog.v2" timestamp="1599514883320">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="395" y="186" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599514730274" />
+    <state x="395" y="186" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599514883320" />
     <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597828426332" />
     <state x="99" y="139" width="1722" height="842" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597244409031">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="99" y="139" width="1722" height="842" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597244409031" />
-    <state x="775" y="476" width="362" height="178" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597828373820">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="551" y="321" width="363" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599514941124">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="551" y="321" width="363" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1599514941124" />
     <state x="775" y="476" width="362" height="178" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597828373820" />
     <state x="623" y="258" key="run.anything.popup" timestamp="1597242679397">
       <screen x="0" y="0" width="1920" height="1080" />
