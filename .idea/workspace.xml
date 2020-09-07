@@ -5,7 +5,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72d7afe0-39fc-46ee-aad1-f3089224e25c" name="Default Changelist" comment="clean" />
+    <list default="true" id="72d7afe0-39fc-46ee-aad1-f3089224e25c" name="Default Changelist" comment="clean">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599514880448</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="clean">
+      <created>1599515472373</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599515472373</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,20 +169,28 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="812" y="466" width="288" height="182" key="VCS.ChangelistChooser/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597764721160" />
-    <state x="395" y="186" width="802" height="531" key="Vcs.Push.Dialog.v2" timestamp="1599514883320">
+    <state x="395" y="186" width="802" height="531" key="Vcs.Push.Dialog.v2" timestamp="1599515474906">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="395" y="186" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599514883320" />
+    <state x="395" y="186" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599515474906" />
     <state x="555" y="292" width="802" height="531" key="Vcs.Push.Dialog.v2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597828426332" />
     <state x="99" y="139" width="1722" height="842" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1597244409031">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="99" y="139" width="1722" height="842" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597244409031" />
-    <state x="551" y="321" width="363" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599514941124">
+    <state x="551" y="321" width="363" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599515217311">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="551" y="321" width="363" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1599514941124" />
+    <state x="551" y="321" width="363" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1599515217311" />
     <state x="775" y="476" width="362" height="178" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1280.1024/0.0.1920.1080@0.0.1920.1080" timestamp="1597828373820" />
+    <state x="427" y="250" key="git4idea.ui.GitResetDialog" timestamp="1599515267719">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="427" y="250" key="git4idea.ui.GitResetDialog/0.0.1366.728@0.0.1366.728" timestamp="1599515267719" />
+    <state x="427" y="150" key="git4idea.ui.GitUnstashDialog" timestamp="1599515256696">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="427" y="150" key="git4idea.ui.GitUnstashDialog/0.0.1366.728@0.0.1366.728" timestamp="1599515256696" />
     <state x="623" y="258" key="run.anything.popup" timestamp="1597242679397">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
