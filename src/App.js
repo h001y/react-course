@@ -42,7 +42,7 @@ class App extends React.Component {
                 </header>
                 <main>
                     <div>
-                        <Modal modal={modal} />
+                        <Modal />
                     </div>
                     <div>
                         <BookCard book={book} />
@@ -57,6 +57,7 @@ class App extends React.Component {
                 </footer>
             </>
         );
+
     }
 }
 
