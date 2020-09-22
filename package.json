@@ -13,7 +13,16 @@
     "parcel": "^2.0.0-beta.1"
   },
   "dependencies": {
+    "node-forge": "^0.10.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h001y/react-course.git"
+  },
+  "bugs": {
+    "url": "https://github.com/h001y/react-course/issues"
+  },
+  "homepage": "https://github.com/h001y/react-course#readme"
 }
