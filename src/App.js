@@ -1,6 +1,8 @@
 import React from 'react';
 import BookCard from './BookCard';
 import Modal from './Modal';
+import FormName from './FormName';
+import UserInfo from './UserInfo';
 
 import './index.css'
 
@@ -27,6 +29,14 @@ const styles = {
         maxWidth:'110px',
     }
 }
+const user = {
+    'email': 'Gregor@Hohpe.com',
+    'firstName': 'Gregor',
+    'lastName': 'Hohpe',
+    'avatarUrl': 'https://d39qdlcrvnra4b.cloudfront.net/avatars/341672/original/gregor_hohpe_hires.jpg?1579927914',
+}
+const AuthContext = React.createContext(user.firstName);
+
 
 class App extends React.Component {
     constructor(props) {
@@ -34,11 +44,11 @@ class App extends React.Component {
     }
     render() {
         const { book } = this.props;
-        const { modal } = this.props;
         return (
             <>
                 <header style={styles.header}>
                     <img style={styles.logo} src="https://img2.freepng.es/20181120/eu/kisspng-buffalo-sabres-national-hockey-league-logo-buffalo-buff-5bf4276210f435.6754865615427275220695.jpg" />    SomeHeader
+                    <UserInfo />
                 </header>
                 <main>
                     <div>
@@ -46,6 +56,9 @@ class App extends React.Component {
                     </div>
                     <div>
                         <BookCard book={book} />
+                    </div>
+                    <div>
+                        <FormName />
                     </div>
                 </main>
                 <footer style={styles.footer}>
