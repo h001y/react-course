@@ -5,11 +5,10 @@ const UserInfo = () => (
     <AuthContext.Consumer>
     {
         user => (
-            <div>
-                <h1>{user.name}</h1>
-                <h2>{user.firstName}</h2>
-                <h3>{user.lastName}</h3>
-                <img width='40px' src={user.avatar} />
+            <div class='w3-right w3-row' >
+                    <div class='w3-col w3-padding'>
+                        <img width='40px' src={user.avatar} /> {user.firstName} {user.lastName}
+                    </div>
             </div>
         )
 }
