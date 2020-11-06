@@ -29,14 +29,6 @@ const styles = {
         maxWidth:'110px',
     }
 }
-const user = {
-    'email': 'Gregor@Hohpe.com',
-    'firstName': 'Gregor',
-    'lastName': 'Hohpe',
-    'avatarUrl': 'https://d39qdlcrvnra4b.cloudfront.net/avatars/341672/original/gregor_hohpe_hires.jpg?1579927914',
-}
-const AuthContext = React.createContext(user.firstName);
-
 
 class App extends React.Component {
     constructor(props) {
@@ -44,6 +36,7 @@ class App extends React.Component {
     }
     render() {
         const { book } = this.props;
+
         return (
             <>
                 <header style={styles.header}>
@@ -73,6 +66,5 @@ class App extends React.Component {
 
     }
 }
-
 
 export default App;

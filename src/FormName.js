@@ -32,7 +32,7 @@ class FormName extends React.Component {
         return (
             <form onSubmit={this.handleSubmit}>
                 <label htmlFor='user_name'>
-                    Введите ваше имя:
+                    Your name:
                 </label>
                 <input
                     type="text"
@@ -41,7 +41,7 @@ class FormName extends React.Component {
                     name='name' />
                     <br />
                 <label htmlFor='user_name'>
-                    Введите ваш e-mail:
+                    Your e-mail:
                 </label>
                 <input
                     type="text"
@@ -49,7 +49,7 @@ class FormName extends React.Component {
                     onChange={this.handleChange}
                     name='eMail' />
                 <br />
-                            <input type="submit" value="Отправить" />
+                            <input type="submit" value="Send" />
             </form>
         );
     }
