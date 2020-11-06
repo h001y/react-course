@@ -1,26 +1,19 @@
 import React from 'react';
+import AuthContext from './AuthContext';
 
-import {AuthContext} from './AuthContext';
-
-class UserInfo extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-    render(){
-        return(
-            <AuthContext.Consumer>
-                    <div>
-                        <div>
-                            tgfhf
-                        </div>
-                        <div>
-                            grdfrgdfg
-                        </div>
-                    </div>
-
-                </AuthContext.Consumer>
-        );
-    }
+const UserInfo = () => (
+    <AuthContext.Consumer>
+    {
+        user => (
+            <div>
+                <h1>{user.name}</h1>
+                <h2>{user.firstName}</h2>
+                <h3>{user.lastName}</h3>
+                <img width='40px' src={user.avatar} />
+            </div>
+        )
 }
+    </AuthContext.Consumer>
+);
 
 export default UserInfo;

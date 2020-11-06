@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import AuthContext from './AuthContext';
 import App from './App';
-import {AuthContext} from './AuthContext';
 
 const book = {
     'name': 'OpenIntro Statistics',
@@ -57,7 +56,7 @@ const user = {
 
 ReactDOM.render(
     <AuthContext.Provider value={user}>
-    <App book={book} />
+        <App book={book} />
     </AuthContext.Provider>,
     document.getElementById('root')
 );
