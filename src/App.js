@@ -30,6 +30,17 @@ const styles = {
     }
 }
 
+const FooterBlock = ( props ) => {
+    return(
+        <footer style={styles.footer}>
+            <div>
+                <br /><span> Made with love from Russia { props.yearToday } @copyright</span>
+                <br /><span> All Right reserved</span>
+                <br /><span> Protected by <a href="">WTFPL</a> License</span>
+            </div>
+        </footer>
+    );
+};
 
 class App extends React.Component {
     constructor(props) {
@@ -55,13 +66,7 @@ class App extends React.Component {
                         <FormName />
                     </div>
                 </main>
-                <footer style={styles.footer}>
-                    <div>
-                        <br /><span> Made with love from Russia {new Date().getFullYear()} @copyright</span>
-                        <br /><span> All Right reserved</span>
-                        <br /><span> Protected by <a href="">WTFPL</a> License</span>
-                    </div>
-                </footer>
+                <FooterBlock yearToday={new Date().getFullYear()}/>
             </>
         );
 
