@@ -11,7 +11,6 @@ const styles = {
         overflowX: 'hidden'
     }
 }
-
 const classes = {
     authorCol: 'w3-padding w3-col',
     authorAbout: 'w3-padding w3-large',

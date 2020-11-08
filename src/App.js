@@ -3,17 +3,19 @@ import BookCard from './BookCard';
 import Modal from './Modal';
 import FormName from './FormName';
 import UserInfo from './UserInfo';
+import SimilarBookList from "./SimilarBookList";
 
 import './index.css'
 
+
 const styles = {
     header:{
-        backgroundColor:'#d3ddf3',
+        backgroundColor:'#ffffff',
         color:'#2b1b1b',
         fontSize: '26px',
         fontFamily:'OpenSans',
         minHeight:'50px',
-        marginBottom:'45px',
+        marginBottom:'45px'
     },
     footer:{
         backgroundColor:'#eec2c2',
@@ -37,6 +39,9 @@ const FooterBlock = ( props ) => {
                 <br /><span> Made with love from Russia { props.yearToday } @copyright</span>
                 <br /><span> All Right reserved</span>
                 <br /><span> Protected by <a href="">WTFPL</a> License</span>
+                <div>
+                    <Modal />
+                </div>
             </div>
         </footer>
     );
@@ -51,26 +56,19 @@ class App extends React.Component {
 
         return (
             <>
-                <header style={styles.header}>
-                    <img style={styles.logo} src="https://img2.freepng.es/20181120/eu/kisspng-buffalo-sabres-national-hockey-league-logo-buffalo-buff-5bf4276210f435.6754865615427275220695.jpg" />    SomeHeader
+                <header className='w3-border-bottom' style={styles.header}>
+                    <img style={styles.logo} src="https://yt3.ggpht.com/a/AATXAJxkA6CVZcSR64aThQwgfWasaPr3OfXsOWkoz5Es=s900-c-k-c0xffffffff-no-rj-mo" />
+                    CrowdBook
                     <UserInfo />
                 </header>
                 <main>
                     <div>
-                        <Modal />
-                    </div>
-                    <div>
+                        <h2 className='w3-center w3-padding'>{book.name}</h2>
                         <BookCard book={book} />
                     </div>
                     <div>
-                        <h2>Похожие книги</h2>
-                        <div>
-                            <h4> Название книги </h4>
-                            <br />
-                            <h4> Описание книги </h4>
-                            <br />
-                            <h4> А тут автор </h4>
-                        </div>
+                        <h2 className='w3-center w3-padding'>Similar books</h2>
+                        <SimilarBookList />
                     </div>
                     <div>
                         <FormName />
