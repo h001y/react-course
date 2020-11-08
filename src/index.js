@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import AuthContext from './AuthContext';
 import App from './App';
 
 const book = {
@@ -47,8 +47,16 @@ const book = {
     'subscribers': '489',
     'hotPngImg': 'http://cdn.onlinewebfonts.com/svg/img_343770.png'
 }
+const user = {
+    'name': 'Gregor@Hohpe.com',
+    'firstName': 'Gregor',
+    'lastName': 'Hohpe',
+    'avatar': 'https://d39qdlcrvnra4b.cloudfront.net/avatars/341672/original/gregor_hohpe_hires.jpg?1579927914',
+}
 
 ReactDOM.render(
-    <App book={book} />,
+    <AuthContext.Provider value={user}>
+        <App book={book} />
+    </AuthContext.Provider>,
     document.getElementById('root')
 );
