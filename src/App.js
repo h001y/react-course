@@ -63,6 +63,16 @@ class App extends React.Component {
                         <BookCard book={book} />
                     </div>
                     <div>
+                        <h2>Похожие книги</h2>
+                        <div>
+                            <h4> Название книги </h4>
+                            <br />
+                            <h4> Описание книги </h4>
+                            <br />
+                            <h4> А тут автор </h4>
+                        </div>
+                    </div>
+                    <div>
                         <FormName />
                     </div>
                 </main>
