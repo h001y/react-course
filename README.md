@@ -1,5 +1,5 @@
 # react-course
 
-My working project for Thinknetica React Js course. 
+My practice react project. Project is website like leanpub - books crowdfunding.
 
-Book seller page with author donation .. 
+Tech: React + Parcel + JSON data's.
