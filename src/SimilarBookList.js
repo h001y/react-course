@@ -30,7 +30,7 @@ const SimilarBookCard = ( props ) => {
     return(
         <div>
             <div className='w3-center w3-large w3-padding'> { props.name }</div>
-            <div className='w3-left w3-padding'> <img width='70px' height='100px' src={ props.coverImg } /></div>
+            <div className='w3-left w3-padding'> <img alt={ props.name } width='70px' height='100px' src={ props.coverImg } /></div>
             <div className='w3-small w3-padding'> { props.description } </div>
             <div className='w3-right w3-padding'> { props.author } </div>
 
