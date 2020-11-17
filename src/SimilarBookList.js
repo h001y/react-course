@@ -41,19 +41,20 @@ class SimilarBookList extends React.Component {
         const { books } = this.state;
         return (
             <div className='w3-row'>
-                <SimilarBookCard removeFromList={this.removeFromList} books={ books }/>
+                {
+                    books.map( book  => (
+                <SimilarBookCard removeFromList={this.removeFromList} book={ book }/>
+                    ))
+                }
             </div>
         );
     }
 }
 
-export default SimilarBookList;
+export default React.memo(SimilarBookList);
 
-const SimilarBookCard = ({ books, removeFromList }) => (
-    books.length > 0 ?
+const SimilarBookCard = ({ book, removeFromList }) => (
         <div>
-            {
-                books.map( book  => (
                     <div key={book.bookId} className='w3-col m4 l4 s4'>
                         <div className='w3-right'>
                             <button className='w3-button' onClick={() => removeFromList(book.bookId)}>X</button>
@@ -64,8 +65,5 @@ const SimilarBookCard = ({ books, removeFromList }) => (
                         <div className='w3-small w3-padding'> {book.description} </div>
                         <div className='w3-right w3-padding'> {book.author} </div>
                     </div>
-                ))
-            }
         </div>
-        : <div> <h2>No similar books</h2> </div>
 );

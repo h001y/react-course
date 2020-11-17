@@ -32,13 +32,13 @@ const styles = {
     }
 }
 
-const FooterBlock = ( props ) => {
+const FooterBlock = () => {
     return(
         <footer style={styles.footer}>
             <div>
-                <br /><span> Made with love from Russia { props.yearToday } @copyright</span>
-                <br /><span> All Right reserved</span>
-                <br /><span> Protected by <a href="">WTFPL</a> License</span>
+                <div><span> Made with love from Russia {new Date().getFullYear()} @copyright</span></div>
+                <div><span> All Right reserved</span></div>
+                <div><span> Protected by <a href="">WTFPL</a> License</span></div>
                 <div>
                     <Modal />
                 </div>
@@ -56,8 +56,10 @@ class App extends React.Component {
 
         return (
             <>
-                <header className='w3-border-bottom' style={styles.header}>
-                    <img style={styles.logo} src="https://yt3.ggpht.com/a/AATXAJxkA6CVZcSR64aThQwgfWasaPr3OfXsOWkoz5Es=s900-c-k-c0xffffffff-no-rj-mo" />
+                <header className='w3-border-bottom w3-padding' style={styles.header}>
+                    <img style={styles.logo}
+                         className="w3-padding"
+                         src="https://thumbs.dreamstime.com/b/%D0%B8%D0%BD%D0%B2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D1%83%D1%8E%D1%89-%D0%B2-%D0%B8%D0%B4%D0%B5%D1%8E-crowdfunding-%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%86%D0%B8%D1%8F-%D0%BF%D0%BB%D0%BE%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD-112514795.jpg" />
                     CrowdBook
                     <UserInfo />
                 </header>
@@ -74,7 +76,7 @@ class App extends React.Component {
                         <FormName />
                     </div>
                 </main>
-                <FooterBlock yearToday={new Date().getFullYear()}/>
+                <FooterBlock/>
             </>
         );
 
