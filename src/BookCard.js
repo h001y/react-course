@@ -69,7 +69,6 @@ class BookCard extends React.Component {
                         <div className={classes.urlPic}><img alt={shortDescription} src={urlPic} /></div>
                     </div>
                     <div className={classes.authorInf}>
-
                         <AuthorList authors={authors} />
                     </div>
                 </div>

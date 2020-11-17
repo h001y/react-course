@@ -38,7 +38,7 @@ class Modal extends React.Component {
     render() {
         return (
             <>
-                <button onClick={() => this.toggle()}>Show privace policy</button>
+                <button className='w3-right w3-padding-bottom' onClick={() => this.toggle()}>Show privace policy</button>
                 {
                     this.state.isOpen && ReactDOM.createPortal(
                         <div style={styles.overlay}>
