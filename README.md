@@ -1,5 +1,6 @@
 
-My practice react project. Project is website like leanpub - books crowdfunding.
+My practice react project. 
+Project is website like leanpub - books crowdfunding.
 
 All coincidences with real people are random and events are fictional
 
