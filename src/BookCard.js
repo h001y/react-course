@@ -10,17 +10,18 @@ const styles = {
 
 const classes = {
     mainContainer: 'w3-container',
-    bookInfo: "w3-row w3-col m2",
+    bookInfo: "w3-row w3-col m5",
     bookImg: "w3-row w3-col m4",
     bookCard: 'w3-row',
     headTitle: 'w3-row',
-    name: 'w3-col w3-padding w3-xxlarge w3-margin-top w3-margin-left left',
-    shortDescription: 'w3-row w3-padding m6 w3-margin-top w3-margin-left left',
+    name: 'w3-col w3-padding w3-xxlarge left',
+    shortDescription: 'w3-row w3-padding m6 left',
     pagesNum: 'w3-row w3-padding m2',
     language: 'w3-row w3-padding m2',
     progress: 'w3-row w3-padding m2',
     urlPic: 'w3-row w3-padding m6',
-    authorInf: 'w3-row w3-col m6'
+    authorInf: 'w3-row w3-col m6',
+    simpleRow: 'w3-row w3-padding m2'
 }
 
 class BookCard extends React.Component {
@@ -49,17 +50,19 @@ class BookCard extends React.Component {
         return (
             <div className={classes.mainContainer}>
                 <div className={classes.bookCard}>
-                    <div className={classes.bookInfo}>
+                    <div class='w3-row'>
                         <div className={classes.name}>{name}</div>
+                    </div>
+                    <div className={classes.bookInfo}>
                         <div className={classes.shortDescription}>{shortDescription}</div>
                         <div className={classes.pagesNum}>Pages: {pagesNum}</div>
                         <div className={classes.language}>Book Language: {language}</div>
                         <div className={classes.progress}>Progress: {progress}</div>
-                        <div>Minimum Price: {minPrice}</div>
-                        <div>Expecting Price: {expectPrice}</div>
-                        <div>Taken from Sell: {takenBill}</div>
-                        <div>Waiting from Sell: {WaitingBill}</div>
-                        <div>Subscribers: {subscribers}</div>
+                        <div className={classes.simpleRow}>Minimum Price: {minPrice}</div>
+                        <div className={classes.simpleRow}>Expecting Price: {expectPrice}</div>
+                        <div className={classes.simpleRow}>Taken from Sell: {takenBill}</div>
+                        <div className={classes.simpleRow}>Waiting from Sell: {WaitingBill}</div>
+                        <div className={classes.simpleRow}>Subscribers: {subscribers}</div>
                             {
                                 subscribers > 300 &&
                             <img style={styles.hotPngImg} src={hotPngImg} />

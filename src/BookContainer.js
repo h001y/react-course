@@ -67,7 +67,7 @@ class BookContainer extends Component {
         return data.records.map(
             record => ({
                 id: record.fields.id,
-                name: record.fields.title,
+                name: record.fields.name,
                 shortDescription: record.fields.shortDescription,
                 pagesNum: record.fields.pagesNum,
                 language: record.fields.language,
