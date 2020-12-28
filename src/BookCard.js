@@ -1,5 +1,7 @@
- import React from 'react';
+import React from 'react';
 import AuthorList from "./AuthorList";
+import WithLoader from "./HOC-comp/WithLoader";
+import UseBooks from "./hooks/UseBooks";
 
 const styles = {
     hotPngImg: {
@@ -24,33 +26,44 @@ const classes = {
     simpleRow: 'w3-row w3-padding m2'
 }
 
-class BookCard extends React.Component {
-    render(){
-        if (!this.props.book)
-            return <div>Empty book</div>;
 
-        const{
-            book: {
-                name,
-                shortDescription,
-                pagesNum,
-                language,
-                progress,
-                urlPic,
-                authors,
-                minPrice,
-                expectPrice,
-                takenBill,
-                WaitingBill,
-                subscribers,
-                hotPngImg
-            }
-        } = this.props;
+ const BookCard = () => {
+
+     const books = UseBooks()
+
+     if (!books)
+         return <div>Empty book</div>
+
+     const book = books[0]
+     const book_id = book.id
+     const otherBooks = books.filter( book => book.id !== book_id)
+
+
+     const{
+             name,
+             shortDescription,
+             pagesNum,
+             language,
+             progress,
+             urlPic,
+             authors,
+             minPrice,
+             expectPrice,
+             takenBill,
+             WaitingBill,
+             subscribers,
+             hotPngImg
+     } = book;
+     const subscribersLimitToPopular = 10
+
+
+     if (!books)
+         return <div>Empty book</div>
 
         return (
             <div className={classes.mainContainer}>
                 <div className={classes.bookCard}>
-                    <div class='w3-row'>
+                    <div className='w3-row'>
                         <div className={classes.name}>{name}</div>
                     </div>
                     <div className={classes.bookInfo}>
@@ -77,7 +90,6 @@ class BookCard extends React.Component {
                 </div>
             </div>
         );
-    }
 }
 
-export default BookCard;
+ export default WithLoader(BookCard);

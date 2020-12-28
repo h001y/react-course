@@ -1,6 +1,6 @@
 import React from 'react'
 
-const withLoader = EnhancedComponent => (
+const WithLoader = EnhancedComponent => (
     function withLoader(props) {
         return(
             props.isLoading
@@ -10,4 +10,4 @@ const withLoader = EnhancedComponent => (
     }
 )
 
-export default withLoader
+export default WithLoader
