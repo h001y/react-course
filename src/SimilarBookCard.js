@@ -3,7 +3,7 @@ import SimilarBookList from "./SimilarBookList";
 
 const SimilarBookCard = ({ book, removeFromList }) => (
     <div>
-        <div key={book.bookId} className='w3-col m4 l4 s4'>
+        <div key={book.bookId} className='w3-col m6 l4 s12'>
             <div className='w3-right'>
                 <button className='w3-button' onClick={() => removeFromList(book.bookId)}>X</button>
             </div>

@@ -36,8 +36,6 @@ const classes = {
 
      const book = books[0]
      const book_id = book.id
-     const otherBooks = books.filter( book => book.id !== book_id)
-
 
      const{
              name,
@@ -54,7 +52,6 @@ const classes = {
              subscribers,
              hotPngImg
      } = book;
-     const subscribersLimitToPopular = 10
 
 
      if (!books)
@@ -82,7 +79,7 @@ const classes = {
                         }
                     </div>
                     <div className={classes.bookImg}>
-                        <div className={classes.urlPic}><img alt={shortDescription} src={urlPic} /></div>
+                        <div className={classes.urlPic}><img className='w3-col m12 l6' alt={shortDescription} src={urlPic} /></div>
                     </div>
                     <div className={classes.authorInf}>
                         <AuthorList authors={authors} />
