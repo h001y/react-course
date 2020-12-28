@@ -10,9 +10,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.0.0-beta.1"
+    "parcel": "^2.0.0-nightly.474"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "gs": "0.0.2",
+    "lodash": "^4.17.20",
     "node-forge": "^0.10.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
