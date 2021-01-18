@@ -1,5 +1,5 @@
 import React from 'react';
-import BookCard from './BookCard';
+import BookCard from './bookCard/BookCard';
 import Modal from './Modal';
 import FormName from './FormName';
 import UserInfo from './UserInfo';

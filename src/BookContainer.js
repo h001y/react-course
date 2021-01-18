@@ -1,12 +1,10 @@
 import React, {Component} from 'react'
-import BookCard from './BookCard';
+import BookCard from './bookCard/BookCard';
 import axios from 'axios'
 import * as _ from 'lodash'
 import {stringify} from 'qs'
 
 const API_TOKEN = 'keyxVH3YtgGxjTv8g'
-
-const FullUrlApi = 'https://api.airtable.com/v0/appnTJaLKZEKO39K2/Books?api_key=keyxVH3YtgGxjTv8g';
 
 const httpClient = axios.create({
     baseURL: 'https://api.airtable.com/v0/appnTJaLKZEKO39K2',
