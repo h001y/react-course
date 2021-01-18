@@ -1,10 +1,8 @@
 import React, {Component} from 'react'
 import BookCard from './bookCard/BookCard';
 import axios from 'axios'
-import * as _ from 'lodash'
+import { zip, zipObject } from 'lodash'
 import {stringify} from 'qs'
-
-const API_TOKEN = 'keyxVH3YtgGxjTv8g'
 
 const httpClient = axios.create({
     baseURL: 'https://api.airtable.com/v0/appnTJaLKZEKO39K2',
@@ -26,13 +24,12 @@ class BookContainer extends Component {
     }
 
     _fetch_data() {
-        httpClient.get('/Books?api_key='+API_TOKEN , {
+        httpClient.get('/Books' , {
             params: {
-                maxRecords: 5
+                maxRecords: 5,
+                api_key: 'keyxVH3YtgGxjTv8g'
             },
-            paramsSerializer: (params) => {
-                return stringify(params, { arrayFormat: 'brackets' })
-            }
+            paramsSerializer: (params) => stringify(params, { arrayFormat: 'brackets' })
         })
             .then(result => result.data)
             .then(this._mapFromAirtable)
@@ -50,13 +47,13 @@ class BookContainer extends Component {
 
         const _mapAuthors = (fields) => {
 
-            return _.zip(
+            return zip(
                 fields["id (from Authors)"],
                 fields["name (from Authors)"],
                 fields["email (from Authors)"],
                 fields["avatar (from Authors)"],
                 fields["description (from Authors)"]
-            ).map(record => _.zipObject(
+            ).map(record => zipObject(
                 ['id', 'name', 'email', 'avatar', 'description'],
                 record
             ))
