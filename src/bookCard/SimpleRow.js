@@ -1,7 +1,7 @@
 import React from 'react';
 
-const SimpleRow = (props) => {
-    const { label, rowDescription, rowDynamic } = props;
+const SimpleRow = ({ label, rowDescription, rowDynamic }) => {
+
     return (
         <>
             <div id={label} className= 'w3-row w3-padding m2'>
