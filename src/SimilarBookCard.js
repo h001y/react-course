@@ -1,5 +1,4 @@
 import React from 'react';
-import SimilarBookList from "./SimilarBookList";
 
 const SimilarBookCard = ({ book, removeFromList }) => (
     <div>

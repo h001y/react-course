@@ -1,8 +1,9 @@
 import React from 'react';
-import BookCard from './BookCard';
+import BookCard from './bookCard/BookCard';
 import Modal from './Modal';
 import FormName from './FormName';
 import UserInfo from './UserInfo';
+import BookContainer from './BookContainer';
 import SimilarBookList from "./SimilarBookList";
 
 import './index.css'
@@ -66,7 +67,7 @@ class App extends React.Component {
                 <main>
                     <div>
                         <h2 className='w3-center w3-padding'>{book.name}</h2>
-                        <BookCard book={book} />
+                        <BookContainer />
                     </div>
                     <div>
                         <h2 className='w3-center w3-padding'>Similar books</h2>
