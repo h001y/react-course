@@ -60,7 +60,7 @@ function _mapFromAirtable(data) {
     )
 }
 
-const useBooks = () => {
+const UseBooks = () => {
     const [books, setBooks] = useState(null)
 
     useEffect(() => {
@@ -72,4 +72,4 @@ const useBooks = () => {
     return books
 }
 
-export default useBooks
+export default UseBooks
