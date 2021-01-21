@@ -2,10 +2,10 @@ import React, { useContext } from 'react';
 import AuthContext from './AuthContext';
 
 const UserInfo = () => {
-    const auth_user = useContext(AuthContext);
+    const authUser = useContext(AuthContext);
 
     return (
-        auth_user.email
+        authUser.email
             ? (
                 <div className='w3-right w3-row'>
                     <div className='w3-col w3-padding'>

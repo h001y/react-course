@@ -1,7 +1,7 @@
 import React from 'react';
 import AuthorList from "./AuthorList";
 import WithLoader from "./HOC-comp/WithLoader";
-import UseBooks from "./hooks/UseBooks";
+import useBooks from "./hooks/UseBooks";
 
 const styles = {
     hotPngImg: {
@@ -29,14 +29,14 @@ const classes = {
 
  const BookCard = () => {
 
-     const books = UseBooks()
+     const books = useBooks()
 
      if (!books)
          return <div>Empty book</div>
 
      const book = books[0]
-     const book_id = book.id
-     const otherBooks = books.filter( book => book.id !== book_id)
+     const bookId = book.id
+     const otherBooks = books.filter( book => book.id !== bookId)
 
 
      const{
