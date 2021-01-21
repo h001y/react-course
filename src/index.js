@@ -7,7 +7,7 @@ const user = {
     'name': 'Gregor@Hohpe.com',
     'firstName': 'Gregor',
     'lastName': 'Hohpe',
-    'avatar': 'https://d39qdlcrvnra4b.cloudfront.net/avatars/341672/original/gregor_hohpe_hires.jpg?1579927914',
+    'avatar': 'https://d39qdlcrvnra4b.cloudfront.net/avatars/341672/original/gregor_hohpe_hires.jpg?1579927914'
 }
 
 ReactDOM.render(
