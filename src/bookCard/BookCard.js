@@ -2,6 +2,8 @@ import React from 'react';
 import AuthorList from "../AuthorList";
 import BookName from "./BookName";
 import SimpleRow from "./SimpleRow";
+import WithLoader from "../HOC-comp/WithLoader";
+import useBooks from "../hooks/UseBooks";
 
 
 const styles = {
@@ -11,28 +13,35 @@ const styles = {
     }
 }
 
-class BookCard extends React.Component {
-    render(){
-        if (!this.props.book)
-            return <div>Empty book</div>;
+const BookCard = () => {
+
+    const books = useBooks()
+
+    if (!books)
+        return <div>Empty book</div>
+
+    const book = books[0]
+    const bookId = book.id
+    const otherBooks = books.filter( book => book.id !== bookId)
 
         const{
-            book: {
-                name,
-                shortDescription,
-                pagesNum,
-                language,
-                progress,
-                urlPic,
-                authors,
-                minPrice,
-                expectPrice,
-                takenBill,
-                WaitingBill,
-                subscribers,
-                hotPngImg
-            }
-        } = this.props;
+            name,
+            shortDescription,
+            pagesNum,
+            language,
+            progress,
+            urlPic,
+            authors,
+            minPrice,
+            expectPrice,
+            takenBill,
+            WaitingBill,
+            subscribers,
+            hotPngImg
+        } = book;
+
+        if (!books)
+            return <div>Empty book</div>
 
         return (
             <div className="w3-container">
@@ -63,6 +72,5 @@ class BookCard extends React.Component {
             </div>
         );
     }
-}
 
-export default BookCard;
+export default WithLoader(BookCard);

@@ -1,7 +1,5 @@
-import React, {Component} from 'react'
-import BookCard from '../BookCard';
+import React from 'react'
 import axios from 'axios'
-import * as _ from 'lodash'
 import {stringify} from 'qs'
 
 const API_TOKEN = 'keyxVH3YtgGxjTv8g'
