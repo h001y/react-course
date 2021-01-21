@@ -6,7 +6,8 @@ All coincidences  with real people are random and events are fictional
 
 Making with tests random data.
 
-Stack: React + Parcel + JSON data's.
+Stack1: React + Parcel + JSON data's.
+Than change to: React + axios + API Airtable + webpack + babel.
 
 ![How it look](https://i.ibb.co/NYdn7bg/09-11-2020-223205.jpg)
 
