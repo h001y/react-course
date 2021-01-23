@@ -29,3 +29,7 @@ body {
 * {
     box-sizing: border-box;
 }
+
+.main-page-blank-space {
+    height: 400px;
+}

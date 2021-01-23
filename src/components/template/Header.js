@@ -1,5 +1,5 @@
 import React from 'react';
-import UserInfo from "../UserInfo";
+import UserInfo from "./UserInfo";
 
 const header = {
     mainClass: 'w3-container',

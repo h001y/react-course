@@ -1,10 +1,7 @@
 import React from 'react';
-import AuthorList from "../AuthorList";
+import AuthorList from "../../../components/pages/authorCard/AuthorList";
 import BookName from "./BookName";
 import SimpleRow from "./SimpleRow";
-import WithLoader from "../HOC-comp/WithLoader";
-import useBooks from "../hooks/UseBooks";
-
 
 const styles = {
     hotPngImg: {
@@ -13,16 +10,14 @@ const styles = {
     }
 }
 
-const BookCard = () => {
+class BookCard extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    render(){
 
-    const books = useBooks()
-
-    if (!books)
-        return <div>Empty book</div>
-
-    const book = books[0]
-    const bookId = book.id
-    const otherBooks = books.filter( book => book.id !== bookId)
+        if (!this.props.book)
+            return <div>Empty book</div>
 
         const{
             name,
@@ -38,10 +33,8 @@ const BookCard = () => {
             WaitingBill,
             subscribers,
             hotPngImg
-        } = book;
+        } = this.props.book;
 
-        if (!books)
-            return <div>Empty book</div>
 
         return (
             <div className="w3-container">
@@ -57,8 +50,8 @@ const BookCard = () => {
                         <SimpleRow label="sell" rowDescription="Taken from Sell:" rowDynamic={takenBill}/>
                         <SimpleRow label="waiting" rowDescription="Waiting from Sell:" rowDynamic={WaitingBill}/>
                         <SimpleRow label="subscribers" rowDescription="Subscribers:" rowDynamic={subscribers}/>
-                            {
-                                subscribers > 300 &&
+                        {
+                            subscribers > 300 &&
                             <img style={styles.hotPngImg} src={hotPngImg} />
                         }
                     </div>
@@ -72,5 +65,6 @@ const BookCard = () => {
             </div>
         );
     }
+}
 
-export default WithLoader(BookCard);
+export default BookCard;

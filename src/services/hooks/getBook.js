@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import {stringify} from "qs";
 import * as _ from "lodash";
-
-const API_TOKEN = 'keyxVH3YtgGxjTv8g'
+import { API_TOKEN } from "../helpers/constants";
 
 const httpClient = axios.create({
     baseURL: 'https://api.airtable.com/v0/appnTJaLKZEKO39K2',
@@ -60,7 +59,7 @@ function _mapFromAirtable(data) {
     )
 }
 
-const UseBooks = () => {
+const GetBook = () => {
     const [books, setBooks] = useState(null)
 
     useEffect(() => {
@@ -72,4 +71,4 @@ const UseBooks = () => {
     return books
 }
 
-export default UseBooks
+export default GetBook
