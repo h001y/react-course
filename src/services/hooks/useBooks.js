@@ -6,7 +6,7 @@ import { API_TOKEN } from "../helpers/constants";
 
 const httpClient = axios.create({
     baseURL: 'https://api.airtable.com/v0/appnTJaLKZEKO39K2',
-    timeout: 1000
+    timeout: 5000
 })
 
 function _fetch_data() {

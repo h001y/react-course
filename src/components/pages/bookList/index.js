@@ -5,7 +5,6 @@ import WithLoader from "../../../services/HOC-comp/WithLoader";
 const BookList = () => {
 
     const books = useBooks();
-    console.log(books);
 
     if (!books)
         return <div>Empty book</div>
