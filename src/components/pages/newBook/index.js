@@ -30,29 +30,35 @@ const schema = yup.object().shape({
     WaitingBill: yup.number().min(0).required(),
     authors: yup.array().required(),
     urlPic: yup.mixed()
+        .test(
+            "required",
+            "A File is required",
+            value => value && value.length > 0
+        ).test(
+            "fileFormat",
+            "Unsupported format",
+            value => value && value[0] && supportedFormats.includes(value[0].type)
+        )
+        .test(
+            "fileSize",
+            "File to large",
+            value => value && value[0] && value[0].size <= 1000000
+        )
 })
 
-
-const EditBook = ({ match: { params } }) => {
-    const { setValue, errors, register, handleSubmit, control, formState: { isSubmitting } } = useForm({ resolver: yupResolver(schema) })
+const NewBook = () => {
+    const { errors, register, handleSubmit, control, formState: { isSubmitting } } = useForm({ resolver: yupResolver(schema) })
     const [coverFile, setCoverFile] = useState(null);
 
     const { fields, append, remove } = useFieldArray({
         control,
-        name: 'authors'
+        name: 'book'
     })
 
     const history = useHistory()
-    const book = getBook(params.id)
+
     const authors = useAuthors()
-
-
-    useEffect(() => {
-        if (book)
-            setValue('authors', book.authorIds.map(authorId => ({ id: authorId })))
-    }, [book])
-
-    if (!book || !authors)
+    if (!authors)
         return <div>Waiting...</div>
 
     const onSubmit = async ({...fields}) => {
@@ -66,7 +72,7 @@ const EditBook = ({ match: { params } }) => {
             }
         }
 
-        const res = await updateBook(book.id, {
+        const res = await createBook({
             ...fields,
             cover: uploadResult.url
         })
@@ -77,7 +83,7 @@ const EditBook = ({ match: { params } }) => {
 
     return (
         <Template>
-            Edit Book
+            New Book
 
             <form onSubmit={handleSubmit(onSubmit)}>
                 <Field name='name' errors={errors} label='name' className={styles.field} register={register}/>
@@ -88,7 +94,7 @@ const EditBook = ({ match: { params } }) => {
                 <Field name='takenBill' errors={errors} label='takenBill' fieldType='number' className={styles.field} defaultValue={0} register={register}/>
                 <Field name='WaitingBill' errors={errors} label='WaitingBill' fieldType='number' className={styles.field} defaultValue={0} register={register}/>
 
-                { book.urlPic && <img src={book.urlPic} alt="Cover"/> }
+                <DropzoneField errors={errors} setCoverFile={setCoverFile} register={register}/>
 
                 <label htmlFor='authors' className={styles.selectLabel}>authors</label>
 
@@ -98,7 +104,6 @@ const EditBook = ({ match: { params } }) => {
                         ref={register}
                         className={styles.selectOptions}
                         name={`authors[${index}]`}
-                        defaultValue={field.id}
                     >
                         {authors.map((author) => (
                             <option key={author.id} value={author.id}>{author.name}</option>
@@ -110,20 +115,15 @@ const EditBook = ({ match: { params } }) => {
 
                 {errors && errors['authors'] && <span style={{color: 'red'}}>{errors['authors'].message}</span>}
 
-                <DropzoneField errors={errors} setCoverFile={setCoverFile} />
-                {errors && errors['cover'] && <span style={{color: 'red'}}>{errors['cover'].message}</span>}
-
                 <br/>
-
                 { isSubmitting
-                    ? <Loader/>
-                    : <button className={styles.submitButton}>Update book</button>
+                    ? <Loader />
+                    : <button type="submit" className={styles.submitButton}>Add book</button>
                 }
-
             </form>
         </Template>
     )
 
 }
 
-export default EditBook
+export default NewBook
