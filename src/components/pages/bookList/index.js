@@ -1,21 +1,37 @@
 import React from 'react';
-import useBooks from "../../../services/hooks/UseBooks";
-import WithLoader from "../../../services/HOC-comp/WithLoader";
+import Template from "../../template";
+import {Helmet} from "react-helmet";
+import {Link} from "react-router-dom";
+import useBooks from "../../../services/hooks/useBooks";
+import { bookPath } from "../../../services/helpers/routes";
 
 const BookList = () => {
 
-    const books = useBooks();
+    const { books } = useBooks()
 
     if (!books)
         return <div>Empty book</div>
 
-    return (
-        <div className="w3-container">
-            <a href={books.id} >{books.name}</a>
-            <a href={books.id} >{books.name}</a>
-            <a href={books.id} >{books.name}</a>
-        </div>
-    );
+
+    return(
+        <Template>
+            <Helmet>
+                <title>Book List</title>
+            </Helmet>
+            <b>Book Page</b>
+            {
+                books ?
+                    books.map((book) => {
+                        return (
+                            <p key={book.id}>
+                                <Link to={bookPath(book.id)}>{book.name}</Link>
+                            </p>
+                        )
+                    })
+                    : <p>None</p>
+            }
+        </Template>
+    )
 }
 
-export default WithLoader(BookList);
+export default BookList
