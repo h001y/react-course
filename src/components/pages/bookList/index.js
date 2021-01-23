@@ -4,23 +4,17 @@ import WithLoader from "../../../services/HOC-comp/WithLoader";
 
 const BookList = () => {
 
-    const books = useBooks()
-    const book = books[0]
-    const bookId = book.id
-    const book1 = books[1]
-    const bookId1 = book1.id
-    const book2 = books[2]
-    const bookId2 = book2.id
-
+    const books = useBooks();
+    console.log(books);
 
     if (!books)
         return <div>Empty book</div>
 
     return (
         <div className="w3-container">
-            <a href={bookId} >{book.name}</a>
-            <a href={bookId1} >{book1.name}</a>
-            <a href={bookId2} >{book2.name}</a>
+            <a href={books.id} >{books.name}</a>
+            <a href={books.id} >{books.name}</a>
+            <a href={books.id} >{books.name}</a>
         </div>
     );
 }
