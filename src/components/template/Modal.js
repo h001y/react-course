@@ -30,7 +30,6 @@ class Modal extends React.Component {
         super(props);
         this.state = { isOpen: false };
     }
-
     toggle() {
         this.setState({ isOpen: !this.state.isOpen });
     }
