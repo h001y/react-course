@@ -1,35 +1,31 @@
 import React from 'react';
-import BookCard from './bookCard/BookCard';
-import FormName from './FormName';
-import Header from './template/Header';
-import Footer from './template/Footer';
-import SimilarBookList from "./SimilarBookList";
+import Book from './components/pages/bookCard';
+import BookList from './components/pages/bookList';
+import NewBook from './components/pages/newBook';
+import EditBook from './components/pages/editBook';
+import Main from './components/pages/main';
+import Error404 from "./components/pages/404";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { newBookPath, editBookPath, bookPath, mainPath, booklistPath, contactPath } from "./services/helpers/routes";
+import Contacts from './Components/Pages/Contacts';
 
 import './index.css'
 
 class App extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+
     render() {
         return (
-            <>
-                <Header />
-                <main>
-                    <div>
-                        <h2 className='w3-left w3-padding'> You looking now </h2>
-                        <BookCard />
-                    </div>
-                    <div>
-                        <h2 className='w3-center w3-padding'>Similar books</h2>
-                        <SimilarBookList />
-                    </div>
-                    <div>
-                        <FormName />
-                    </div>
-                </main>
-               <Footer />
-            </>
+            <Router>
+                <Switch>
+                    <Route component={Main} path={mainPath()} exact />
+                    <Route component={NewBook} path={newBookPath()} strict exact />
+                    <Route component={EditBook} path={editBookPath()} strict exact />
+                    <Route component={Book} path={bookPath()} strict exact />
+                    <Route component={Contacts} path={contactPath()} strict exact />
+                    <Route component={BookList} path={booklistPath()} strict exact />
+                    <Route path='/404' component={Error404} />
+                </Switch>
+            </Router>
         );
     }
 }

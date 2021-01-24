@@ -1,14 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Layout from "../../shared/Layout";
+import Template from "../../template";
+import { Helmet } from "react-helmet";
 
 const Error404 = () => {
     return(
-        <Layout>
+        <Template>
+            <Helmet>
+                <title>404 Error</title>
+            </Helmet>
             <p>This page is not found. Try again later, bud</p>
             <span>404 Error</span>
             <Link to={'/'}>Back</Link>
-        </Layout>
+        </Template>
     )
 }
 
