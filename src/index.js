@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AuthContext from './AuthContext';
+import AuthContext from './services/AuthContext';
 import App from './App';
 
 const user = {
