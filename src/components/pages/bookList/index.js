@@ -19,14 +19,20 @@ const BookList = () => {
                 <title>Book List</title>
             </Helmet>
             <b>Book Page</b>
+            <div className='w3-container'>
             {
                 books ?
                     books.map((book) => {
                         return (
                             <p key={book.id}>
                                 <Link to={bookPath(book.id)}>
-                                    <div>
-                                        {book.name}
+                                    <div className='w3-row'>
+                                        <div className='w3-col m1'>
+                                            <img src={book.urlPic} width="80px" height="80px" alt={book.name}/>
+                                        </div>
+                                        <div className='w3-col m6'>
+                                              {book.name}
+                                        </div>
                                     </div>
                                 </Link>
                             </p>
@@ -34,6 +40,7 @@ const BookList = () => {
                     })
                     : <p>None</p>
             }
+            </div>
         </Template>
     )
 }
