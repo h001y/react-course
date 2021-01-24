@@ -24,7 +24,11 @@ const BookList = () => {
                     books.map((book) => {
                         return (
                             <p key={book.id}>
-                                <Link to={bookPath(book.id)}>{book.name}</Link>
+                                <Link to={bookPath(book.id)}>
+                                    <div>
+                                        {book.name}
+                                    </div>
+                                </Link>
                             </p>
                         )
                     })
