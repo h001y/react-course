@@ -5,7 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack"
+    "build": "webpack",
+    "test": "jest"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
   },
   "author": "Vlad Aristarkhov (hoo1y)",
   "license": "ISC",
@@ -18,10 +24,12 @@
     "@babel/register": "^7.10.5",
     "@testing-library/jest-dom": "^5.11.1",
     "@testing-library/react": "^10.4.7",
+    "@testing-library/user-event": "^12.6.0",
     "babel-jest": "^26.1.0",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.2.1",
     "html-webpack-plugin": "^4.3.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^26.1.0",
     "mini-css-extract-plugin": "^0.10.0",
     "style-loader": "^1.2.1",
